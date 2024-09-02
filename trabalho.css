@@ -1,0 +1,393 @@
+/* Esse reset básico ajuda a criar uma base consistente e previsível para o design da página, removendo as margens e preenchimentos padrão e ajustando o modelo de caixa dos elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Este código CSS fornece uma base sólida para a aparência geral da página, garantindo um layout consistente e interativo.*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: #f4f4f9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f05841;
+}
+
+nav .social-links {
+    display: flex;
+}
+
+.social-link {
+    margin-left: 1rem;
+}
+
+#back-header a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+#back-header a:hover {
+    background-color: #f05841;
+}
+
+/* Essas regras CSS estilizam a seção do cabeçalho da página, centralizando o conteúdo, definindo o espaçamento interno e externo*/
+header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+header .avatar {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+header .title {
+    margin: 0.5rem 0;
+}
+
+/* Esta parte é responsável pelo estilo da aba de formação. */
+.formacao {
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.education-title {
+    font-size: 1.3rem;
+    color: #f05841;
+    margin-bottom: 0.5rem;
+}
+
+.education-description {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.education-description small {
+    color: #f05841;
+    font-size: 0.9rem;
+}
+
+/*  Esta parte é responsável pelo estilo da aba de Portfolio*/
+.portfolio {
+    text-align: center;
+}
+
+.portfolio .link {
+    color: #f05841;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.portfolio .link:hover {
+    color: #333;
+}
+
+/* Esta parte é responsável pelo estilo da aba de Contato */
+.contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato form input, .contato form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato form input[type="submit"] {
+    background-color: #f05841;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contato form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Essta aba é responsável pela estética dos links que se encontram no canto superior direito da página */
+.social-link a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-link svg {
+    fill: #f4f4f9;
+    transition: fill 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link:hover a {
+    background-color: #f05841;
+}
+
+.social-link:hover svg {
+    fill: #fff;
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f05841;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e04730;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background: #444;
+}
+
+
+/* Esta parte é ligada a frase em destaque logo abaixo da parte "Sobre" */
+.highlight {
+    background-color: #ffffff;
+    border-left: 5px solid #f05841;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Altera a parte do cabeçalho e a estética da parte Formação.*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text .title {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.header-text .subtitle {
+    font-size: 1.5em;
+    margin: 5px 0 0;
+    color: #666;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+h3 .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+  /* Altera a estética e formatação da área sobre*/
+.sobre {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+.sobre .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.container-sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-text .text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfólio */
+.portfolio {
+  text-align: center;
+  padding: 40px;
+}
+
+.portfolio .title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.portfolio .link {
+  color: #f05841;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.portfolio .link:hover {
+  text-decoration: underline;
+}
+
+.portfolio .github-icon {
+  fill: #f05841;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+  /* Contato */
+  .contato {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+  }
+  
+  .contato .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+  
+  
+  
